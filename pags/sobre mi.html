@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mí</title>
+  <!-- Enlace al archivo CSS de Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center  mb-4">Sobre Mí</h1>
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Pagina principal</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Sobre mi</li>
+      </ol>
+    </nav>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Información Personal
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <p>Nombre: Marco Mamani</p>
+            <p>Edad: 20 años</p>
+            <p>País: Bolivia</p>
+            <p>Ocupación: Estudiante de  Informática</p>
+            <p>Intereses: Programación, Inteligencia Artificial, Fotografía</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExperienciaEducativa">
+              Detalles
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Experiencia Educativa
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <p>Estudio en la Universidad Mayor de San Andres, actualmente cursando la carrera de Informática.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExperienciaEducativa">
+              Detalles
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Pasatiempos
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body">
+            <p>En mi tiempo libre, me gusta programar proyectos personales, explorar nuevas tecnologías y practicar fotografía.</p>
+            <p>También disfruto leer sobre temas de ciencia y tecnología, así como salir a correr para mantenerme en forma.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalExperienciaEducativa" tabindex="-1" role="dialog" aria-labelledby="modalExperienciaEducativaLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalExperienciaEducativaLabel">Experiencia Educativa - Detalles</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Estudio en la Universidad Mayor de San Andres, actualmente cursando la carrera Informática.</p>
+          <p>He participado en diversos proyectos académicos relacionados con el desarrollo de software y la programación web.</p>
+          <p>Mis materias favoritas incluyen Algoritmos y Estructuras de Datos, Bases de Datos y Desarrollo Web.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts de Bootstrap (jQuery y Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
